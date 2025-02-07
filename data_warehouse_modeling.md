@@ -11,3 +11,8 @@
 
 - [[Udemy] Data Warehouse Fundamentals for Beginners](https://www.udemy.com/course/data-warehouse-fundamentals-for-beginners)
 
+## Plan to Watch
+
+- [Dimensional Modeling by Bryan Cafferky](https://youtu.be/lWPiSZf7-uQ?si=AsUkvLKLswUeFhT5)
+- [An Agile Data Warehouse by Ron Ballard](https://youtu.be/Y64__z5dhB8?si=QlDIYG1kVYD_y8Ku)
+
