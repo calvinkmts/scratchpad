@@ -4,6 +4,7 @@
 - [Developer Productivity V2](https://frontendmasters.github.io/dev-prod-2/)
 - [Vim Fundamentals](https://theprimeagen.github.io/vim-fundamentals/)
 - [Software Developer Success: Soft Skills & Testing](https://software-developer-success.my.canva.site/)
+- [Finding Clients as a Freelancer](https://static.frontendmasters.com/assets/courses/2022-07-28-freelancing/FindingClients.pdf)
 
 ## Exercises
 
