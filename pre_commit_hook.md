@@ -14,3 +14,7 @@
 
 - Not really for unit testing, especially for a monorepo designed project.
 
+### Resources
+
+- [pre-commit sites](https://pre-commit.com/#intro)
+
