@@ -5,8 +5,8 @@
 - [Vim Fundamentals](https://theprimeagen.github.io/vim-fundamentals/)
 - [Software Developer Success: Soft Skills & Testing](https://software-developer-success.my.canva.site/)
 - [Finding Clients as a Freelancer](https://static.frontendmasters.com/assets/courses/2022-07-28-freelancing/FindingClients.pdf)
+- [A Tour of Web 3: Ethereum & Smart Contracts with Solidity](https://theprimeagen.github.io/web3-smart-contracts/)
 
 ## Exercises
 
 - [Software Developer Success: Soft Skills & Testing](https://melted-pilot-e8b.notion.site/Software-Developer-Success-05fc5c7e2c9543059954d20890bfd213)
-
