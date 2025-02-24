@@ -23,6 +23,10 @@ Goals:
 - Work with it faster, some good playground to improving proficiency with vim motion.
 - Need to learn more about improving performance (default lsp for python is unrealiably slow).
 
+Links:
+
+- [Vim mode on Zed](https://zed.dev/docs/vim)
+
 ## WezTerm
 
 Goals:
@@ -41,4 +45,14 @@ Goals:
 Goals:
 
 - Improve keymap.
+
+## PopOS
+
+Goals:
+
+- Improve window management
+
+Links:
+
+- [PopOS Keyboard Shortcut](https://support.system76.com/articles/pop-keyboard-shortcuts/)
 
