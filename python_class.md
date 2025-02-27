@@ -16,3 +16,8 @@ More detail of the lightweight-ness of atrrs is that we don't get bloated with m
 
 If you take a look at the pydantic sites, it is developed more for validation library so requiring it for creating class (not a validation object) for me is not really the way I want to go.
 
+## Resources
+
+- [Subclassing, Composition, Python, and You — Hynek Schlawack](https://youtu.be/2qpW1-7TnzA?si=mfavmgHVvBIrGUS4)
+
+
