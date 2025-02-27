@@ -19,5 +19,8 @@ If you take a look at the pydantic sites, it is developed more for validation li
 ## Resources
 
 - [Subclassing, Composition, Python, and You — Hynek Schlawack](https://youtu.be/2qpW1-7TnzA?si=mfavmgHVvBIrGUS4)
+  
+  - The talks is mainly about the trade off of subclassing (inheritance) vs composition (it was using the decorator function).
+  - the speaker also mention when to use subclassing, for example, if you already have the knowledge or already know enough product of the said abstraction.
 
 
