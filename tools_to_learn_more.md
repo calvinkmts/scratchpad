@@ -26,6 +26,7 @@ Goals:
 Links:
 
 - [Vim mode on Zed](https://zed.dev/docs/vim)
+- [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)
 
 ## WezTerm
 
@@ -33,6 +34,10 @@ Goals:
 
 - For personal use only as the office machine cannot be installed with it.
 - Improve workflow with the terminal.
+
+Links:
+
+- [Wezterm Default Key Assignment](https://wezterm.org/config/default-keys.html)
 
 ## Tmux
 
