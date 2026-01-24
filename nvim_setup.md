@@ -13,3 +13,8 @@ The idea is I don't want to keep repeating mysel with pressing atl+tab multiple 
 - [The Only Video You Need to Get Started with Neovim by TJ Devries](https://youtu.be/m8C0Cq9Uv9o?si=inUEwVuCjNomP0pk)
 - [How to ACTUALLY switch from VS Code to Neovim](https://youtu.be/aCgDs8Nv-jo?si=xlDXNdcp1NTtU7sU)
 
+## The Setup
+
+- [Neovim Config - Part 1 - Lazy Vim by TheVimagen](https://youtu.be/ZWWxwwUsPNw?si=reV-NkGRoHwmmbW9)
+- [Neovim Config - Part 3 -- LSP by TheVimagen](https://youtu.be/MuUrCcvE-Yw?si=Wg288DxjK3hFr1x8)
+- [Rust and Neovim - A Thorough Guide and Walkthrough](https://rsdlt.github.io/posts/rust-nvim-ide-guide-walkthrough-development-debug/)
