@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Template</title>
+    <style>
+        /* Force A4 Size */
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            max-width: 100%;
+            margin: 0 auto;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        /* Compact Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .header h1 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Compact Meta Grid */
+        .meta-grid {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        .meta-item {
+            flex: 1;
+        }
+
+        .meta-item strong {
+            display: block;
+            color: #7f8c8d;
+            font-size: 0.85em;
+            margin-bottom: 2px;
+        }
+
+        .meta-item span {
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        /* Compact Address */
+        .address-grid {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+
+        .address-box {
+            flex: 1;
+        }
+
+        .address-box h3 {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            color: #7f8c8d;
+            margin-bottom: 4px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 3px;
+        }
+
+        .address-box p {
+            margin: 1px 0;
+        }
+
+        /* Compact Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        th {
+            text-align: left;
+            border-bottom: 2px solid #2c3e50;
+            padding: 6px 5px;
+            color: #2c3e50;
+            font-weight: 700;
+            font-size: 0.9em;
+        }
+
+        td {
+            padding: 8px 5px;
+            vertical-align: top;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item-col {
+            width: 25%;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .desc-col {
+            width: 55%;
+            text-align: justify;
+        }
+
+        .price-col {
+            width: 20%;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        /* Tight Bullet Points */
+        .desc-col ul {
+            margin: 0;
+            padding-left: 15px;
+            color: #555;
+        }
+
+        .desc-col li {
+            margin-bottom: 2px;
+            line-height: 1.25;
+        }
+
+        /* Updated Bottom Section to include Signature */
+        .bottom-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            border-top: 2px solid #eee;
+            padding-top: 15px;
+        }
+
+        .payment-info {
+            flex: 1;
+            font-size: 0.9em;
+            color: #555;
+            background: #fcfcfc;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #f0f0f0;
+            margin-right: 30px;
+            height: fit-content;
+        }
+
+        .payment-info h3 {
+            margin: 0 0 3px 0;
+            font-size: 0.95em;
+            color: #2c3e50;
+        }
+
+        .payment-info p {
+            margin: 1px 0;
+        }
+
+        /* Wrapper for Total + Signature */
+        .right-bottom-col {
+            flex: 0 0 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .total-section {
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        .total-label {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        .total-amount {
+            font-size: 1.6em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .signature-section {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signature-img {
+            max-height: 60px;
+            margin-bottom: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .signature-name {
+            font-weight: bold;
+            color: #2c3e50;
+            border-top: 1px solid #ccc;
+            padding-top: 5px;
+            display: inline-block;
+            min-width: 150px;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 0.8em;
+            color: #999;
+            text-align: center;
+            border-top: 1px dashed #eee;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Invoice</h1>
+    </div>
+
+    <div class="meta-grid">
+        <div class="meta-item">
+            <strong>Invoice Number</strong>
+            <span>[YEAR-001]</span>
+        </div>
+        <div class="meta-item">
+            <strong>Invoice Date</strong>
+            <span>[MONTH DAY, YEAR]</span>
+        </div>
+        <div class="meta-item">
+            <strong>Due Date</strong>
+            <span>[MONTH DAY, YEAR]</span>
+        </div>
+    </div>
+
+    <div class="address-grid">
+        <div class="address-box">
+            <h3>From</h3>
+            <p><strong>[YOUR NAME]</strong></p>
+            <p>[YOUR STREET ADDRESS]</p>
+            <p>[CITY, ZIP CODE]</p>
+        </div>
+        <div class="address-box">
+            <h3>Bill To</h3>
+            <p><strong>[CLIENT COMPANY NAME]</strong></p>
+            <p>[CLIENT STREET ADDRESS]</p>
+            <p>[CLIENT CITY, ZIP CODE]</p>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="item-col">Item</th>
+                <th class="desc-col">Description</th>
+                <th class="price-col">Value (IDR)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="item-col">Service Item 1</td>
+                <td class="desc-col">
+                    <ul>
+                        <li>Detail point one about the service provided.</li>
+                        <li>Detail point two about the service provided.</li>
+                    </ul>
+                </td>
+                <td class="price-col">0,000,000</td>
+            </tr>
+            <tr>
+                <td class="item-col">Service Item 2</td>
+                <td class="desc-col">
+                    <ul>
+                        <li>Detail point one about the service provided.</li>
+                        <li>Detail point two about the service provided.</li>
+                    </ul>
+                </td>
+                <td class="price-col">0,000,000</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="bottom-section">
+        <div class="payment-info">
+            <h3>PAYMENT INFORMATION</h3>
+            <p><strong>Bank Name:</strong> [BANK NAME]</p>
+            <p><strong>Account Name:</strong> [YOUR ACCOUNT NAME]</p>
+            <p><strong>Account Number:</strong> [YOUR ACCOUNT NUMBER]</p>
+        </div>
+
+        <div class="right-bottom-col">
+            <div class="total-section">
+                <span class="total-label">Total Amount</span>
+                <span class="total-amount">IDR 0,000,000</span>
+            </div>
+
+            <div class="signature-section">
+                <div style="height: 40px;"></div>
+                <div class="signature-name">[YOUR NAME]</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Thank you for your business. Payment is due within [X] days.</p>
+    </div>
+
+</body>
+
+</html>
